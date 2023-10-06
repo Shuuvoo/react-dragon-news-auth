@@ -15,9 +15,7 @@ const Newscard = ({ aNews }) => {
             <p>{details.slice(0,150)} <Link to={`/news/${_id}`} className="text-green-400 font-bold" >Read More ....</Link> </p>
             : <p>{details}</p>
         }
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
-        </div>
+        
       </div>
     </div>
   );
