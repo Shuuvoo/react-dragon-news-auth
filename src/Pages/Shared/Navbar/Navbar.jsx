@@ -12,7 +12,7 @@ const Navbar = () => {
         console.log(result.user)
       })
       .catch(error => {
-        console.error(message)
+        console.error(error)
       })
 
     }
@@ -77,7 +77,7 @@ const Navbar = () => {
           </div>
         </label>
         {
-          user ? <button className="btn">Sign Out</button> : <Link to='/login'>
+          user ? <button onClick={handleSignOut} className="btn">Sign Out</button> : <Link to='/login'>
           <button className="btn">Login</button>
         </Link>
         }
